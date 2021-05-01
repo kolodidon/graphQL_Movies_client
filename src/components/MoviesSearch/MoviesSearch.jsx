@@ -18,7 +18,7 @@ class MoviesSearch extends React.Component {
           onChange={ handleChange('name') }
           onKeyPress={ (e) => handleSearch(e) }
           value = { name }
-          placeholder="Search…"
+          placeholder="Поиск..."
           classes={{
             root: classes.inputRoot,
             input: classes.inputInput,

@@ -17,11 +17,6 @@ import DirectorsSearch from '../DirectorsSearch/DirectorsSearch';
 
 import withHocs from './DirectorsTableHoc';
 
-const directors = [
-  { id: 1, name: 'Quentin Tarantino', age: 55, movies: [ { name: 'Movie 1' }, { name: 'Movie 2' } ] },
-  { id: 2, name: 'Guy Ritchie', age: 50, movies: [ { name: 'Movie 1' }, { name: 'Movie 2' } ] }
-];
-
 class DirectorsTable extends React.Component {
   state = {
     anchorEl: null,
@@ -83,9 +78,9 @@ class DirectorsTable extends React.Component {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell align="right">Age</TableCell>
-                <TableCell>Movies</TableCell>
+                <TableCell>Имя</TableCell>
+                <TableCell align="right">Возраст</TableCell>
+                <TableCell>Фильмы</TableCell>
                 <TableCell></TableCell>
               </TableRow>
             </TableHead>
@@ -104,8 +99,8 @@ class DirectorsTable extends React.Component {
                           <MoreIcon />
                         </IconButton>
                         <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose} >
-                          <MenuItem onClick={() => this.handleEdit(director)}><CreateIcon /> Edit</MenuItem>
-                          <MenuItem onClick={this.handleDelete}><DeleteIcon /> Delete</MenuItem>
+                          <MenuItem onClick={() => this.handleEdit(director)}><CreateIcon /> Редактировать</MenuItem>
+                          <MenuItem onClick={this.handleDelete}><DeleteIcon /> Удалить</MenuItem>
                         </Menu>
                       </>
                     </TableCell>

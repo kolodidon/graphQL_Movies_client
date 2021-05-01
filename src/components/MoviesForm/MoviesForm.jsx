@@ -35,11 +35,11 @@ class MoviesForm extends React.Component {
 
     return (
       <Dialog onClose={this.handleClose} open={open} aria-labelledby="simple-dialog-title">
-        <DialogTitle className={classes.title} id="simple-dialog-title">Movie information</DialogTitle>
+        <DialogTitle className={classes.title} id="simple-dialog-title">Информация о фильме</DialogTitle>
         <form className={classes.container} noValidate autoComplete="off">
           <TextField
             id="outlined-name"
-            label="Name"
+            label="Название"
             className={classes.textField}
             value={name}
             onChange={handleChange('name')}
@@ -48,7 +48,7 @@ class MoviesForm extends React.Component {
           />
           <TextField
             id="outlined-genre"
-            label="Genre"
+            label="Жанр"
             className={classes.textField}
             value={genre}
             onChange={handleChange('genre')}
@@ -57,7 +57,7 @@ class MoviesForm extends React.Component {
           />
           <TextField
             id="outlined-rate"
-            label="Rate"
+            label="Оценка"
             value={rate}
             onChange={handleChange('rate')}
             type="number"
@@ -70,7 +70,7 @@ class MoviesForm extends React.Component {
               ref={ref => { this.InputLabelRef = ref; }}
               htmlFor="outlined-age-simple"
             >
-              Director
+              Режиссер
             </InputLabel>
             <Select
               value={directorId}
@@ -83,10 +83,10 @@ class MoviesForm extends React.Component {
           <div className={classes.wrapper}>
             <FormControlLabel
               control={<Checkbox checked={watched} onChange={handleCheckboxChange('watched')} value="watched" />}
-              label="Watched movie"
+              label="Просмотрено"
             />
             <Button onClick={this.handleSave} variant="contained" color="primary" className={classes.button}>
-              <SaveIcon /> Save
+              <SaveIcon /> Сохранить
             </Button>
           </div>
         </form>

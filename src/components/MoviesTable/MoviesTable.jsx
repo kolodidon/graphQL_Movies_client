@@ -80,11 +80,11 @@ class MoviesTable extends React.Component {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Genre</TableCell>
+                <TableCell>Название</TableCell>
+                <TableCell>Жанр</TableCell>
                 <TableCell align="right">Rate</TableCell>
-                <TableCell>Director</TableCell>
-                <TableCell>Watched</TableCell>
+                <TableCell>Режиссер</TableCell>
+                <TableCell>Просмотрено</TableCell>
                 <TableCell align="right"></TableCell>
               </TableRow>
             </TableHead>
@@ -105,8 +105,8 @@ class MoviesTable extends React.Component {
                           <MoreIcon />
                         </IconButton>
                         <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose} >
-                          <MenuItem onClick={this.handleEdit}><CreateIcon /> Edit</MenuItem>
-                          <MenuItem onClick={this.handleDelete}><DeleteIcon/> Delete</MenuItem>
+                          <MenuItem onClick={this.handleEdit}><CreateIcon /> Редактировать</MenuItem>
+                          <MenuItem onClick={this.handleDelete}><DeleteIcon/> Удалить</MenuItem>
                         </Menu>
                       </>
                     </TableCell>

@@ -23,11 +23,11 @@ class DirectorsForm extends React.Component {
 
     return (
       <Dialog onClose={this.handleClose} open={open} aria-labelledby="simple-dialog-title">
-        <DialogTitle className={classes.title} id="simple-dialog-title">Director information</DialogTitle>
+        <DialogTitle className={classes.title} id="simple-dialog-title">Информация о режиссере</DialogTitle>
         <form className={classes.container} noValidate autoComplete="off">
           <TextField
             id="outlined-name"
-            label="Name"
+            label="Имя"
             className={classes.textField}
             value={name}
             onChange={handleChange('name')}
@@ -36,7 +36,7 @@ class DirectorsForm extends React.Component {
           />
           <TextField
             id="outlined-rate"
-            label="Age"
+            label="Возраст"
             className={classes.textField}
             value={age}
             onChange={handleChange('age')}
@@ -46,7 +46,7 @@ class DirectorsForm extends React.Component {
           />
           <div className={classes.wrapper}>
             <Button onClick={this.handleSave} variant="contained" color="primary" className={classes.button}>
-              <SaveIcon /> Save
+              <SaveIcon /> Сохранить
             </Button>
           </div>
         </form>

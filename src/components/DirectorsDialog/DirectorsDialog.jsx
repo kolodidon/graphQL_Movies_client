@@ -28,18 +28,18 @@ class DirectorsDialog extends React.Component {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Are you sire that you want to delete element?"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">{"Вы точно хотите удалить этот элемент?"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            If you click 'Confirm' this element will be removed from data base.
+            Если вы нажмёте "Подтвердить", элемент будет удалён
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
-            <BlockIcon /> Cancel
+            <BlockIcon /> Отмена
           </Button>
           <Button onClick={this.handleDelete} color="primary" autoFocus>
-            <DeleteForeverIcon /> Confirm
+            <DeleteForeverIcon /> Подтвердить
           </Button>
         </DialogActions>
       </Dialog>
