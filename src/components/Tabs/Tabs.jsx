@@ -34,8 +34,8 @@ class SimpleTabs extends React.Component {
       <div className={classes.root}>
         <AppBar position="static">
           <Tabs variant='fullWidth' value={value} onChange={this.handleChange}>
-            <Tab label="Movies" icon={<CameraIcon />} />
-            <Tab label="Directors" icon={<MovieCreationIcon />} />
+            <Tab label="Фильмы" icon={<CameraIcon />} />
+            <Tab label="Режиссеры" icon={<MovieCreationIcon />} />
           </Tabs>
         </AppBar>
         <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} index={value} onChangeIndex={this.handleChangeIndex} >
