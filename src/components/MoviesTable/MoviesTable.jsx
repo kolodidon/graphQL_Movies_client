@@ -82,7 +82,7 @@ class MoviesTable extends React.Component {
               <TableRow>
                 <TableCell>Название</TableCell>
                 <TableCell>Жанр</TableCell>
-                <TableCell align="right">Rate</TableCell>
+                <TableCell align="right">Оценка</TableCell>
                 <TableCell>Режиссер</TableCell>
                 <TableCell>Просмотрено</TableCell>
                 <TableCell align="right"></TableCell>
